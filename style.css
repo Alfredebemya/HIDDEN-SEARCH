@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(80deg,rgb(72, 72, 116),blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 100vh;
+}
+.recherche{
+    position: relative;
+    height: 50px;
+}
+.recherche input{
+    background-color: #ffff;
+    font-size: 18px;
+    height: 50px;
+    width: 50px;
+    padding: 15px;
+    transition: width 0.3s ease;
+    border: 0;
+}
+.button{
+    background-color: #ffff;
+    font-size: 24px;
+    height: 50px;
+    width: 50px;
+    top: 0;
+    left: 0;
+    transition: width 0.3s ease;
+    border: 0;
+    cursor: pointer;
+    position: absolute;
+}
+.button:focus,
+.input:focus{
+    outline: none;
+}
+.recherche.active .input{
+    width: 200px;
+}
+.recherche.active .button{
+    transform: translateX(197px);
+}
